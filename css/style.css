@@ -82,7 +82,7 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 16vh;
+  height: 15vh;
   padding: 1px 0 0;
   background-color: white;
   z-index: 1;
@@ -442,16 +442,17 @@ h5 {
   align-items: center;
   gap: 20px;
 }
-.logo-brands img{
+.logo-brands img {
   height: auto;
 }
-.gap-footer{
+.gap-footer {
   width: 50px;
 }
-.oldnavy-footer, .BR-footer{
+.oldnavy-footer,
+.BR-footer {
   width: 90px;
 }
-.athleta-footer{
+.athleta-footer {
   width: 120px;
 }
 /* footer */

@@ -67,6 +67,28 @@ html {
   text-decoration: none;
   letter-spacing: 1px;
 }
+/*  */
+
+.header-hover {
+  display: none;
+  position: relative;
+}
+.women:hover::before {
+  content: "";
+  position: absolute;
+  top: 99px;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background-color: #d8e3ec;
+}
+.women:hover::before {
+  display: block;
+}
+.women:hover .header-hover {
+  display: flex;
+}
+/*  */
 .search {
   display: flex;
   /* border: none; */
@@ -77,43 +99,6 @@ html {
   font-family: var(--text-font-Lato);
   border-bottom: 2px solid var(--gap-bg-color);
 }
-/* HOVER */
-.content-hover{
-  display: flex;
-  font-size: 1.4rem;
-  font-family: var(--text-font-Montserrat);
-  justify-content: center;
-  padding: 20px;
-  gap: 50px;
-  line-height: 2.5rem;
-}
-.content-hover h1{
-  border-bottom: 1px solid rgb(179, 179, 179);
-  margin: 20px 20px 20px 0;
-  font-weight: 700;
-}
-.header-hover {
-  display: none;
-  width: 100%;
-  height: 400px;
-  background-color: rgb(255, 255, 255);
-}
-.header {
-  position: relative;
-}
-.header li:hover{
-  font-weight: 900;
-  line-height: 3rem;
-  border-bottom: 2px solid #003764;
-  color: #003764;
-}
-.header ul li:not(:first-child):hover ~ .header-hover {
-  position: absolute;
-  top: 99px;
-  left: 0;
-  display: block;
-}
-/* /HOVER */
 .header2 {
   position: sticky;
   top: 0;
@@ -136,7 +121,7 @@ html {
 
 #search2 {
   border: 1px solid #bababa;
-  border-radius: 5px;
+  border-radius: 3px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -200,9 +185,9 @@ span {
 }
 .style-on-sale::after {
   content: "";
-  background-image: url(../img/cozyme.svg);
+  background-image: url(../img/35$.svg);
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   background-size: cover;
   height: 100%;
@@ -610,51 +595,6 @@ input:focus + label {
 .fall-looks-goods img:nth-child(2) {
   display: none;
 }
-/* Jeans and jacket */
-.first {
-  font-family: var(--text-font-Montserrat);
-  margin: 30px;
-  color: rgb(102, 102, 102);
-  font-size: 1.4rem;
-}
-.jean-jacket {
-  display: flex;
-  /* align-items: center; */
-  margin: 0 20px;
-}
-.img-jean-jacket img {
-  width: 370px;
-  height: auto;
-  margin: 10px 10px 0 0;
-}
-
-.img-jean-jacket {
-  width: 70%;
-  margin: 0 auto;
-}
-.content-jean-jacket {
-  width: 35%;
-}
-.content-jean-jacket .shoppers {
-  display: flex;
-  width: 90%;
-  background-color: #f2f2f2;
-  padding: 10px 20px;
-}
-.content-jean-jacket p {
-  color: #4e4e4e;
-  font-size: 1.4rem;
-  font-family: var(--text-font-Montserrat);
-}
-.content-jean-jacket .title {
-  font-size: 3.4rem;
-  line-height: 3.2rem;
-  font-weight: 100;
-  margin: 20px 0;
-}
-.baby-kids{
-  display: none;
-}
 /* RESPONSIVE */
 /* */
 @media screen and (min-width: 1021px) and (max-width: 1160px) {
@@ -1004,7 +944,7 @@ input:focus + label {
     padding: 15px 0;
     font-size: 1.4rem;
     margin: 3px 0px;
-    min-width: 95%;
+    min-width: 100%;
   }
   h5 {
     font-size: 1.6rem;
@@ -1065,12 +1005,6 @@ input:focus + label {
   .gallery {
     display: block;
   }
-  .kid-baby-sale{
-    display: none;
-  }
-  .baby-kids{
-    display: block;
-  }
 }
 /*  */
 @media screen and (min-width: 350px) and (max-width: 500px) {
@@ -1122,7 +1056,7 @@ input:focus + label {
     padding: 15px 0;
     font-size: 1.4rem;
     margin: 3px 0px;
-    min-width: 95%;
+    min-width: 100%;
   }
   h5 {
     font-size: 1.6rem;
@@ -1185,9 +1119,6 @@ input:focus + label {
   }
   .container-menu {
     display: none;
-  }
-  .baby-kids{
-    display: block;
   }
   .gallery {
     display: block;
